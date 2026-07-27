@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment[en_IN]=Stop Presidio and any temporary Cloudflare tunnels
+Comment=Stop Presidio and any temporary Cloudflare tunnels
+Exec=konsole --title "Presidio Stop" -e /home/rkwap/services/presidio/.helpers/stop-all.sh
+GenericName[en_IN]=
+GenericName=
+Icon=system-shutdown
+MimeType=
+Name[en_IN]=Presidio Stop
+Name=Presidio Stop
+Path=/mnt/Files/Repos/presidio
+StartupNotify=true
+Terminal=false
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=none
+X-KDE-SubstituteUID=false
+X-KDE-Username=

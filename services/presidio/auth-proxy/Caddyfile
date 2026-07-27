@@ -1,0 +1,16 @@
+:8080 {
+	route {
+		@health {
+			method GET
+			path /health
+		}
+		respond @health 200
+
+		@unauthorized not header Authorization "Bearer {$PRESIDIO_BEARER_TOKEN}"
+		respond @unauthorized "Unauthorized" 401
+
+		reverse_proxy {$UPSTREAM} {
+			header_up -Authorization
+		}
+	}
+}
