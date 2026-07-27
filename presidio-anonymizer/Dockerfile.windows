@@ -1,4 +1,4 @@
-FROM python:3.13-windowsservercore@sha256:4d85e7deee9a2bf391142013d8c95b39c3fdc490edeb0606ff55d6cecdbb8e1f
+FROM python:3.14-windowsservercore@sha256:3aac8e5d005a0be0c1576de67d901ed5081265121fd49bad69e1b08fee0dc563
 
 ENV PIP_NO_CACHE_DIR=1
 ENV POETRY_VIRTUALENVS_CREATE=false
